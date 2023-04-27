@@ -1,0 +1,33 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+      http://www.liquibase.org/xml/ns/dbchangelog-ext
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet id="create-user-table" author="hegetomi">
+        <sqlFile path="create-user-table.sql"
+                 relativeToChangelogFile="true" />
+    </changeSet>
+    <changeSet id="create-tickets-table" author="hegetomi">
+        <sqlFile path="create-tickets-table.sql"
+                 relativeToChangelogFile="true" />
+    </changeSet>
+    <changeSet id="create-comments-table" author="hegetomi">
+        <sqlFile path="create-comments-table.sql"
+                 relativeToChangelogFile="true" />
+    </changeSet>
+    <changeSet id="create-envers-tables" author="hegetomi">
+        <sqlFile path="create-envers-tables.sql"
+                 relativeToChangelogFile="true" />
+    </changeSet>
+    <changeSet id="add-closedate-ticket" author="hegetomi">
+        <sqlFile path="add-closure-date-to-tickets.sql"
+                 relativeToChangelogFile="true" />
+    </changeSet>
+    <changeSet id="add-closedate-ticke-history" author="hegetomi">
+        <sqlFile path="add-closure-date-to-tickets-history.sql"
+                 relativeToChangelogFile="true" />
+    </changeSet>
+</databaseChangeLog>
